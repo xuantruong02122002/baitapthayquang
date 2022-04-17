@@ -70,10 +70,9 @@ public class BookModify {
         PreparedStatement statement = null;
         
         try {
-            //lay tat ca danh sach sinh vien
+           
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/quanly_book", "root", "");
-            
-            //query
+           
             String sql = "update book set title=?,price=? where id = ?";
             statement = connection.prepareCall(sql);
             
@@ -111,7 +110,7 @@ public class BookModify {
             
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/quanly_book", "root", "");
             
-            //query
+       
             String sql = "insert into book( title, price) values(  ?, ?)";
             statement = connection.prepareCall(sql);
             
