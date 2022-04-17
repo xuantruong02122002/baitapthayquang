@@ -100,14 +100,14 @@ public class BookModify {
                 }
             }
         }
-        //ket thuc.
+     
     }
      public static void insert(book b) {
         Connection connection = null;
         PreparedStatement statement = null;
         
         try {
-            //lay tat ca danh sach sinh vien
+           
             
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/quanly_book", "root", "");
             
@@ -139,7 +139,7 @@ public class BookModify {
                 }
             }
         }
-        //ket thuc.
+   
     }
      public static List<book> findByTitle(String title) {
         List<book> bookList = new ArrayList<>();
@@ -181,7 +181,7 @@ public class BookModify {
                 }
             }
         }
-        //ket thuc.
+       
         
         return bookList;
     }
@@ -195,7 +195,7 @@ public class BookModify {
 
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/quanly_book", "root", "");
             
-            //query
+         
             String sql = "delete from book where id = ?";
             statement = connection.prepareCall(sql);
             
