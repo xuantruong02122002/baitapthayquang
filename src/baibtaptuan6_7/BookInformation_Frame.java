@@ -226,7 +226,7 @@ public class BookInformation_Frame extends javax.swing.JFrame {
         if(selectedIndex >= 0) {
             book std = bookList.get(selectedIndex);
             
-            int option = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa sinh viên này ?");
+            int option = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa sách viên này ?");
             System.out.println("option : " + option);
             
             if(option == 0) {
